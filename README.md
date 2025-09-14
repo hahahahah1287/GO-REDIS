@@ -18,27 +18,16 @@ Go-Redis 是一个用 Go 语言实现的 Redis 单体服务器。本项目旨在
 go mod tidy
 ```
 
-在主目录下，使用命令行启动 Godis 服务器
+在主目录下，使用命令行启动服务器
 
 ```bash
 go run main.go
 ```
 
-redis 默认监听 0.0.0.0:6399，可以使用 redis-cli 或者其它 redis 客户端连接 Godis 服务器。
+redis 默认监听 0.0.0.0:6399，可以使用 redis-cli 或者其它 redis 客户端连接 Go-Redis 服务器。
 
 redis 首先会从CONFIG环境变量中读取配置文件路径。若环境变量中未设置配置文件路径，则会尝试读取工作目录中的 redis.conf 文件。 
 
 所有配置项均在 [example.conf](./example.conf) 中作了说明。
 
 ps : 不要利用浏览器打开，浏览器通信协议和redis通信协议不一样
-
-## 集群模式
-
-可以使用 node1.conf 和 node2.conf 配置文件，在本地启动一个双节点集群:
-
-```bash
-CONFIG=node1.conf ./godis-darwin &
-CONFIG=node2.conf ./godis-darwin &
-```
-
-集群模式对客户端是透明的，只要连接上集群中任意一个节点就可以访问集群中所有数据：

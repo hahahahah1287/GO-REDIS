@@ -13,11 +13,13 @@ import (
 )
 
 var banner = `
-   ______          ___
-  / ____/___  ____/ (_)____
- / / __/ __ \/ __  / / ___/
-/ /_/ / /_/ / /_/ / (__  )
-\____/\____/\__,_/_/____/
+ GGGGG   OOOOO        RRRRR   EEEEEE  DDDDD    IIIII   SSSSS
+G     G O     O       R    R  E       D    D     I    S     S
+G       O     O  ---  R    R  E       D     D    I    S
+G  GGGG O     O  ---  RRRRR   EEEEE   D     D    I     SSSSS
+G     G O     O  ---  R   R   E       D     D    I          S
+G     G O     O       R    R  E       D    D     I    S     S
+ GGGGG   OOOOO        R     R EEEEEE  DDDDD    IIIII   SSSSS
 `
 
 var defaultProperties = &config.ServerProperties{
