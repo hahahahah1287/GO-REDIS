@@ -31,3 +31,6 @@ redis 首先会从CONFIG环境变量中读取配置文件路径。若环境变�
 所有配置项均在 [redis.conf](./redis.conf) 中作了说明。
 
 ps : 不要利用浏览器打开，浏览器通信协议和redis通信协议不一样
+
+# 命令
+具体命令在[commands.md](./commands.md)中作说明
