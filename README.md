@@ -28,6 +28,6 @@ redis 默认监听 0.0.0.0:6399，可以使用 redis-cli 或者其它 redis 客�
 
 redis 首先会从CONFIG环境变量中读取配置文件路径。若环境变量中未设置配置文件路径，则会尝试读取工作目录中的 redis.conf 文件。 
 
-所有配置项均在 [example.conf](./example.conf) 中作了说明。
+所有配置项均在 [example.conf](./redis.conf) 中作了说明。
 
 ps : 不要利用浏览器打开，浏览器通信协议和redis通信协议不一样
